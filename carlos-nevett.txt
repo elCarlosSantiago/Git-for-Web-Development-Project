@@ -103,8 +103,22 @@ Stretch Questions
         when an element is position absolutely it means that it is removed from the normal flow of the document and will be placed in an exact location on the page.
         This is calculated based on that element's closest non-statically position element ancestor. 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-        Using the box-sizing: border-box; property-value pair in css. The property defines how the width & height of an element are calculated. The value
-        sets the width & height properties to include content, padding & border. 
+          This can be done by setting an elements display property to inline-block. It behaves as same as inline except the width & height can be modified
+          & the top & bottom margins & paddings are respected.
     4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-        Block by default: <div>, <p>, <ol>. inline by default: <span>, <a>.
+        Block by default: <div>, <p>, <ol>. inline by default: <span>, <a>. <img> are inline-block by default (not 100% sure on this there are differing concepts on different websites.)
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+          All HTML elements can be considered rectangular boxes. The box model refers to layout & design of these rectangular boxes, thus the name.
+          These boxes consist of (from the outside in): margins, borders, padding, & the actual content. Using the box-sizing: border-box; property-value pair in css. The property defines how the width & height of an element are calculated. The value
+        sets the width & height properties to include content, padding & border. 
+
+
+    Stretch Git Tasks 
+- [ ] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
+  - [ ] Research and understand what a `merge conflict` is and how to resolve it. 
+  - [ ] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the main branch.
+  - [ ] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
+
+- [ ] Research and set up a Graphical User Interface (GUI) Git console. 
+
+- [ ] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push. 
